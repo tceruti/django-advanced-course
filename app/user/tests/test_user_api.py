@@ -105,8 +105,6 @@ class PrivateUserApiTests(TestCase):
             password='123456',
             name='Test User',
         )
-        print("aaaaa")
-        print(self.user)
         self.client = APIClient()
         self.client.force_authenticate(user=self.user)
 
